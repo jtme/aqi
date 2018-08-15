@@ -5,8 +5,7 @@
 }
 
 .aqi-container {
-    border: 3px solid;
-    border-radius: 10px;
+    border: 1px solid;
     width: 200px;
     float: left;
     margin: 10px;
@@ -17,6 +16,7 @@
 .aqi {
     font-size: 6em;
     font-weight: bold;
+    max-width: 500px;
 }
 
 .pm-label {
@@ -30,4 +30,8 @@
 
 h1 {
   text-align: center;
+}
+
+.AQIplot {
+    height: 400px;
 }
