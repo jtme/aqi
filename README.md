@@ -36,9 +36,13 @@ and add the following line at the end:
 then 
 
 wget -O /var/wwww/html/index.html https://raw.githubusercontent.com/jtme/aqi/master/html/index.html
+
 wget -O /var/wwww/html/aqi.js https://raw.githubusercontent.com/jtme/aqi/master/html/aqi.js
+
 wget -O /var/wwww/html/style.css https://raw.githubusercontent.com/jtme/aqi/master/html/style.css
+
 wget -O /var/wwww/html/plot.js https://raw.githubusercontent.com/jtme/aqi/master/html/plot.js
+
 wget -O /var/wwww/html/plotly-v1.39.4.min.js https://raw.githubusercontent.com/jtme/aqi/master/html/plotly-v1.39.4.min.js
 
 And done.
