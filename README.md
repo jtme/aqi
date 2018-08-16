@@ -19,11 +19,9 @@ Once done, grab the python script
 sudo wget -O /home/pi/aqi.py https://raw.githubusercontent.com/jtme/aqi/master/python/aqi.py
 
 Adjust permissions for pi user and create empty .json file
-sudo chown pi:pi /var/www/html/ 
-sudo echo[] > /var/www/html/aqi.json
+sudo chown pi:pi /var/www/html/ && sudo touch /var/www/html/aqi.json
 
-sudo chmod +x aqi.py
-sudo ./aqi.py
+sudo chmod +x aqi.py && sudo ./aqi.py
 
 Schadule the script - open the crontab file:
 
@@ -35,15 +33,11 @@ and add the following line at the end:
 
 then 
 
-wget -O /var/wwww/html/index.html https://raw.githubusercontent.com/jtme/aqi/master/html/index.html
-
-wget -O /var/wwww/html/aqi.js https://raw.githubusercontent.com/jtme/aqi/master/html/aqi.js
-
-wget -O /var/wwww/html/style.css https://raw.githubusercontent.com/jtme/aqi/master/html/style.css
-
-wget -O /var/wwww/html/plot.js https://raw.githubusercontent.com/jtme/aqi/master/html/plot.js
-
-wget -O /var/wwww/html/plotly-v1.39.4.min.js https://raw.githubusercontent.com/jtme/aqi/master/html/plotly-v1.39.4.min.js
+wget -O /var/www/html/index.html https://raw.githubusercontent.com/jtme/aqi/master/html/index.html &&
+wget -O /var/www/html/aqi.js https://raw.githubusercontent.com/jtme/aqi/master/html/aqi.js &&
+wget -O /var/www/html/style.css https://raw.githubusercontent.com/jtme/aqi/master/html/style.css &&
+wget -O /var/www/html/plot.js https://raw.githubusercontent.com/jtme/aqi/master/html/plot.js &&
+wget -O /var/www/html/plotly-v1.39.4.min.js https://raw.githubusercontent.com/jtme/aqi/master/html/plotly-v1.39.4.min.js
 
 And done.
 
