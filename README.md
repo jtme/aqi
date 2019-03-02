@@ -41,3 +41,6 @@ wget -O /var/www/html/plotly-v1.39.4.min.js https://raw.githubusercontent.com/jt
 
 And done.
 
+
+NOTE TO MYSELF html/plot.js contains hardcoded IP. Update to work properly. 
+
